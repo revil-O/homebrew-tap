@@ -5,7 +5,7 @@ cask "vulkara" do
   url "https://github.com/revil-O/VulKara/releases/download/v#{version}/VulKara-#{version}-arm64.dmg"
   name "VulKara"
   desc "Local AI image generator with high privacy"
-  homepage "https://www.vulkara.net"
+  homepage "https://www.vulkara.net/"
 
   livecheck do
     url :url
@@ -13,7 +13,7 @@ cask "vulkara" do
   end
 
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "VulKara.app"
 
