@@ -1,6 +1,6 @@
 cask "vulkara" do
-  version "0.7.7"
-  sha256 "50e05115230cc644322a93d2ed69095d07f855ed5a46c97b68c83da742ac6311"
+  version "0.7.8"
+  sha256 "58a1bca0777d5be24894971184fb73b294668a758722ea0a23cac6c215ebb3ea"
 
   url "https://github.com/revil-O/VulKara/releases/download/v#{version}/VulKara-#{version}-arm64.dmg"
   name "VulKara"
