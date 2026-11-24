@@ -1,8 +1,13 @@
+# The Homebrew cask of the tap revil-O/homebrew-tap, written whole by .github/workflows/release.yml: the placeholders
+# for the version and both DMGs' checksums are filled in there. Change it here, not in the tap.
 cask "vulkara" do
-  version "0.10.2"
-  sha256 "a1d7f75b8ae93e2a52b9452e232ca746d0d5e03b017460f68e45373a03469239"
+  arch arm: "arm64", intel: "x64"
 
-  url "https://github.com/revil-O/VulKara/releases/download/v#{version}/VulKara-#{version}-arm64.dmg"
+  version "0.10.5"
+  sha256 arm:   "9142e54bcfb3aa643ffbef81c1b3855d7af60986a84b85c997063c6f392a08cb",
+         intel: "94575bdba2cd4a1cd5d6cdb29e5224f9ea44777c1018a50b98033623863b0b5a"
+
+  url "https://github.com/revil-O/VulKara/releases/download/v#{version}/VulKara-#{version}-#{arch}.dmg"
   name "VulKara"
   desc "Local AI image generator with high privacy"
   homepage "https://www.vulkara.net/"
@@ -12,7 +17,6 @@ cask "vulkara" do
     strategy :github_latest
   end
 
-  depends_on arch: :arm64
   depends_on macos: :sonoma
 
   app "VulKara.app"
