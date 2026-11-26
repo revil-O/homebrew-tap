@@ -3,9 +3,9 @@
 cask "vulkara" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.11.0"
-  sha256 arm:   "595b2e9725cede00c8df50f3dbfa9f470bc30cf9056435f6e48456e5a68ac931",
-         intel: "caadcdb909b0f1972b84d3c999fd643d14554630711ae114ce62367ab2177f06"
+  version "0.11.1"
+  sha256 arm:   "6d637f501674636885fb4a0e1f5b61929fe01db8b1eefd266711948aaae30faa",
+         intel: "45fbb1a8e0c0ff3c8db907e392d165ce86e617927755841c6c7a46ef0059b1c0"
 
   url "https://github.com/revil-O/VulKara/releases/download/v#{version}/VulKara-#{version}-#{arch}.dmg"
   name "VulKara"
